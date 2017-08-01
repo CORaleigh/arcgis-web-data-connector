@@ -1,0 +1,47 @@
+{
+  "defaultAlias": "Plain-English name for Table ID",
+  "description": "This is a plain-English description of Table ID.",
+  "id": "tableId",
+  "columns": [
+    {
+      "id": "exampleInt",
+      "dataType": "int",
+      "alias": "Example Integer",
+      "description": "This is an example of an integer column.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "exampleString",
+      "dataType": "string",
+      "alias": "Example String",
+      "description": "This is an example of a string column.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "exampleDateTime",
+      "dataType": "datetime",
+      "alias": "Example Datetime",
+      "description": "This is an example of a datetime column.",
+      "columnRole": "dimension",
+      "columnType": "continuous"
+    },
+    {
+      "id": "exampleBool",
+      "dataType": "bool",
+      "alias": "Example Boolean",
+      "description": "This is an example of a boolean column.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "exampleFloat",
+      "dataType": "float",
+      "alias": "Example Float",
+      "description": "This is an example of a float column.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    }
+  ]
+}

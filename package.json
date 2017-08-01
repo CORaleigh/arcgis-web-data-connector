@@ -1,0 +1,38 @@
+{
+  "name": "arcgis-web-data-wdc",
+  "description": "A Tableau Web Data Connector for ArcGIS Web Data.",
+  "version": "2.0.0",
+  "scripts": {
+    "grunt": "grunt",
+    "open-simulator": "sleep 2 && open http://localhost:8888/Simulator?src=http://localhost:9001",
+    "postinstall": "grunt build && (cd node_modules/webdataconnector && npm install) || echo 'Skipping WDC simulator install...'",
+    "run-simulator": "cd node_modules/webdataconnector && npm start",
+    "simulate": "node node_modules/npm-run-all/bin/npm-run-all --parallel run-simulator start open-simulator",
+    "simulate:dev": "node node_modules/npm-run-all/bin/npm-run-all --parallel run-simulator grunt open-simulator",
+    "start": "./node_modules/.bin/http-server -p 9001",
+    "test": "mocha"
+  },
+  "keywords": [
+    "tableau-wdc",
+    "arcgis-web-data"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "~0.5",
+    "grunt-contrib-connect": "0.10",
+    "grunt-contrib-jshint": "~0.11",
+    "grunt-contrib-uglify": "~0.9",
+    "grunt-contrib-watch": "~0.6",
+    "grunt-gh-pages": "^0.10.0",
+    "http-server": "^0.9.0",
+    "jquery": "*",
+    "jsdom": "^3.1.2",
+    "mocha": "^2.2.5",
+    "mockery": "^1.7.0",
+    "npm-run-all": "^2.1.1",
+    "sinon": "^1.16.1",
+    "webdataconnector": "tableau/webdataconnector#v2.0.1"
+  }
+}
