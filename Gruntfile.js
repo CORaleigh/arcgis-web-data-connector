@@ -63,7 +63,11 @@ module.exports = function(grunt) {
     },
     'gh-pages': {
       options: {
-        base: '.'
+        base: '.',
+        user: {
+          name: 'Justin Greco',
+          email: 'justin.greco@raleighnc.gov'
+        }
       },
       src: ['**'],
       travisDeploy: {
