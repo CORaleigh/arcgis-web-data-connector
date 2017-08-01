@@ -63,7 +63,11 @@ module.exports = function(grunt) {
     },
     'gh-pages': {
       options: {
-        base: '.'
+        base: '.',
+        user: {
+          name: 'Justin Greco',
+          email: 'justin.greco@raleighnc.gov'
+        }
       },
       src: ['**'],
       travisDeploy: {
@@ -72,7 +76,7 @@ module.exports = function(grunt) {
             name: 'Travis Deployment',
             email: 'noreply@travis-ci.org'
           },
-          repo: 'https://' + process.env.GH_TOKEN + '@github.com/repo-owner/arcgis-web-data-connector.git',
+          repo: 'https://justingreco@github.com/coraleigh/arcgis-web-data-connector.git',
           message: 'Auto-deploy via Travis CI',
           silent: true
         },
