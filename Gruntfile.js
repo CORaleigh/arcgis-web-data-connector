@@ -72,7 +72,7 @@ module.exports = function(grunt) {
             name: 'Travis Deployment',
             email: 'noreply@travis-ci.org'
           },
-          repo: 'https://justingreco@github.com/repo-owner/arcgis-web-data-connector.git',
+          repo: 'https://coraleigh@github.com/repo-owner/arcgis-web-data-connector.git',
           message: 'Auto-deploy via Travis CI',
           silent: true
         },
